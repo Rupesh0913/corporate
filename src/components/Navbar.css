@@ -1,4 +1,4 @@
-.navbar {
+.custom-navbar {
     background: #1c2237;
     height: 80px;
     display: flex;
@@ -10,13 +10,13 @@
     z-index: 999;
   }
 
-  .navbar-container {
+  .custom-navbar-container {
     display: flex;
     justify-content: space-between;
     height: 80px;
   }
   
-  .container {
+  .custom-container {
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -26,7 +26,7 @@
     padding-left: 50px;
   }
 
-  .navbar-logo {
+  .custom-navbar-logo {
     color: #fff;
     justify-self: start;
     cursor: pointer;
@@ -36,25 +36,26 @@
     align-items: center;
   }
 
-  .nav-menu {
+  .custom-nav-menu {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: end;
   }
 
-  .nav-item {
+  .custom-nav-item {
     height: 80px;
     border-bottom: 2px solid transparent;
   }
   
-  .nav-item:hover {
+  .custom-nav-item:hover {
     border-bottom: 2px solid #f00946;
+    
   }
   
-  .nav-links {
+  .custom-nav-links {
     color: #fff;
     display: flex;
     align-items: center;
@@ -63,6 +64,7 @@
     height: 100%;
   }
   
+
   .fa-bars {
     color: #fff;
   }
@@ -72,11 +74,11 @@
   }
   
   @media screen and (max-width: 960px) {
-    .NavbarItems {
+     .NavbarItems {
       position: relative;
     }
-  
-    .nav-menu {
+    
+    .custom-nav-menu {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -88,7 +90,7 @@
       transition: all 0.5s ease;
     }
   
-    .nav-menu.active {
+    .custom-nav-menu.active {
       background: #1c2237;
       left: 0;
       opacity: 1;
@@ -96,28 +98,28 @@
       z-index: 1;
     }
   
-    .nav-links {
+    .custom-nav-links {
       text-align: center;
       padding: 2rem;
       width: 100%;
       display: table;
     }
   
-    .nav-links:hover {
+    .custom-nav-links:hover {
       color: #f00946;
       transform: scale(1.2);
       transition: all 0.3s ease;
     }
   
-    .nav-item:hover {
+    .custom-nav-item:hover {
       border: none;
     }
   
-    .nav-item {
+    .custom-nav-item {
       width: 100%;
     }
   
-    .navbar-logo {
+    .custom-navbar-logo {
       position: absolute;
       top: 0;
       left: 0;

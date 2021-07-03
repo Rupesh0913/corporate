@@ -1,41 +1,43 @@
 import React from 'react'
-import  img  from './img/img.png';
+import img from './img/img.png';
 import "./Banner.css"
-import { Dropdown,DropdownButton, ButtonGroup } from 'react-bootstrap'
+import { Tab, Tabs } from 'react-bootstrap'
+import Action from './Links/action';
+
 
 function Banner() {
-    return (
-        <div>
-            <div className="Banner">
-                <div className="banner-wrapper">
-                    <img src={img} alt="buildings" className="img-section"/>
-                </div>
-                <div className="Dropdown__section">
-                <>
-  {['Primary', 'Secondary', 'Success', 'Info', 'Warning'].map(
-    (variant) => (
-      <DropdownButton
-        as={ButtonGroup}
-        key={variant}
-        id={`dropdown-variants-${variant}`}
-        variant={variant.toLowerCase()}
-        title={variant}
-      >
-        <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-        <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-        <Dropdown.Item eventKey="3" active>
-          Active Item
-        </Dropdown.Item>
-        <Dropdown.Divider />
-        <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-      </DropdownButton>
-    ),
-  )}
-</>
-                </div>
-            </div>
+
+ /*  const [showModal, setShowModal] = useState(false)
+
+
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  } */
+
+  return (
+    <div>
+      <div className="Banner">
+        <div className="banner-wrapper">
+          <img src={img} alt="buildings" className="img-section" />
         </div>
-    )
+        <div className="tab__section">
+          <div className="tab__section__wrapper">
+            <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" classname>
+              <Tab eventKey="home" title="Home">
+               {/* <Action/> */}
+              </Tab>
+              <Tab eventKey="profile" title="Profile">
+              {/*   <Sonnet /> */}
+              </Tab>
+              <Tab eventKey="contact" title="Contact">
+            {/*     <Sonnet /> */}
+              </Tab>
+            </Tabs>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Banner

@@ -1,7 +1,26 @@
 .Banner{
-  
+  padding: 0;
+  margin: 0;
+ 
 }
 .img-section{
     width:100%;
-    height:80vh;
+    height:635px;
+}
+.tab__section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -400px;
+    margin-bottom:360px;
+    z-index: 1000;
+    position: realtive;
+}
+.tab-items{
+    color: #000;
+    text-decoration: none;
+}
+.tab-items:hover{
+    color: #000;
+    text-decoration: none;
 }
